@@ -71,6 +71,80 @@
         </div>
     </div>
 </section>
+  <!-- Skills Grid Section -->
+<section class="skills" id="skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Skills</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>@ViewBag.SkillGroup1.Name </h3>
+                </div>
+             </div>
+
+            @foreach (string skill in ViewBag.SkillGroup1.Skills)
+            {
+                <div class="col-lg-6">
+                    @skill
+
+                    <div class="progress progress-striped">
+                        <div class="progress-bar progress-bar-success" style="width: 40%;">
+                            <span class="sr-only">40% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+        <div class="row">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>@ViewBag.SkillGroup2.Name </h3>
+                </div>
+            </div>
+
+            @foreach (string skill in ViewBag.SkillGroup2.Skills)
+            {
+                <div class="col-lg-6">
+                    @skill
+
+                    <div class="progress progress-striped">
+                        <div class="progress-bar progress-bar-info " style="width: 40%;">
+                            <span class="sr-only">40% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+        <div class="row">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>@ViewBag.SkillGroup3.Name </h3>
+                </div>
+            </div>
+
+            @foreach (string skill in ViewBag.SkillGroup3.Skills)
+            {
+                <div class="col-lg-6">
+                    @skill
+
+                    <div class="progress progress-striped">
+                        <div class="progress-bar progress-bar-warning" style="width: 40%;">
+                            <span class="sr-only">40% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
 <!-- About Section -->
 <section class="success" id="about">
     <div class="container">
